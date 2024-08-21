@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <p> <h1><i>Sobre mim</i></h1>
+    <img src="img/brayan.jpg" width="200px">
+    </p>
+
+    <p><h2>Quem sou eu?</h2></p>
+
+    <h2><p>Sobre mim</p></h2>
+<br>
+<p id="message-mudada">Olá, me chamo Brayan, tenho 16 anos, sou programador front-end.</p>
+<div></div>
+<button id="db">Proximo</button>
+<div id="buttao-div">
+    
+</div>
+
+<script>
+let msg = document.getElementById('message-mudada')
+let btn = document.getElementById('db')
+
+mensagens = [msg.textContent, 'Alguns dos meus hobbies são: ouvir musica, jogar jogos de video-game, praticar esportes...', 'Um pouco sobre mim: Olá, meu nome é Brayan e esse é meu projeto final deste módulo, e se eu gostei? sim, eu gostei muito. mas um dos maiores motivos de eu ter gostado desse módulo foram as minhas novas amizades.']
+let cont = 0;
+
+btn.addEventListener('click', function() {
+    cont++;
+    if (cont > 2) {
+        cont = 0;
+        msg.textContent = mensagens[cont];
+    } else {
+        msg.textContent = mensagens[cont];
+    }
+})
+
+
+</script>
+</body>
+</html>
